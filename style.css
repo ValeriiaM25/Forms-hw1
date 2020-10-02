@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+.wrapper {
+    background-image: url(./img/img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 866px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto -50px; 
+    min-height: 100%;
+    padding: 0 0 50px; 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: "Raleway";
+    color: rgb(38, 38, 38);
+    font-weight: 700;
+    line-height: 0.278;
+    text-align: center;
+}
+
+.subtitle {
+    width: 350px;
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-family: "Raleway";
+    color: rgb(38, 38, 38);
+    line-height: 1.471;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input, textarea {
+    width: 500px;
+    padding-left: 20px;
+    background-color: rgba(0, 196, 196, 0.502);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    color: white;
+    background-color: rgba(0, 196, 196, 1);
+    border-left: 3px solid #355b82;
+    transition: border-left .3s;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    font-weight: 700;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    height: 250px;
+    margin-bottom: 120px;
+}
+
+.info {
+    margin-right: 50px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    line-height: 7px;
+    padding-bottom: 10px;
+}
+
+.contacts {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(38, 38, 38);
+    color: rgb(185, 185, 185);
+    line-height: 1.563;
+    font-size: 16px;
+}
+
+span {
+    color: rgb(218, 93, 4);
+}
